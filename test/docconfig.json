@@ -1,0 +1,19 @@
+{
+    "output": "./api.apib",
+    "host": "https://greeter.example.com",
+    "title": "hGreet API",
+    "description": "Top-level description of the API! Yay!",
+    "defaults": {
+        "string": "abcd",
+        "number": 1234,
+        "boolean": true,
+        "jsonKey": "key"
+    },
+    "examples": {
+        "all": {
+            "firstname": "John",
+            "lastname": "Doe"
+        }
+    },
+    "afterHook": "aglio --theme-variables flatly --theme-template triple -i ./api.apib -o ./api.html"
+}

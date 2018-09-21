@@ -1,0 +1,25 @@
+{
+  "name": "documentation-protocol",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "./lib/index.js",
+  "author": "",
+  "bin": {
+    "hdoc": "./bin/hdoc"
+  },
+  "dependencies": {
+    "comment-parser": "^0.5.0",
+    "json-stable-stringify": "^1.0.1",
+    "typescript": "^3.0.3",
+    "typescript-json-schema": "^0.32.0",
+    "yargs": "^12.0.2"
+  },
+  "devDependencies": {
+    "@types/json-stable-stringify": "^1.0.32",
+    "@types/node": "^10.10.2",
+    "@types/yargs": "^12.0.0"
+  }
+}
