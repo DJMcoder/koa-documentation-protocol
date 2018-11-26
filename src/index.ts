@@ -9,7 +9,7 @@ import * as yargs from 'yargs'
 import { Config, parseConfig } from './config'
 import { DocumentationEmitter } from './emitter'
 import { NiceError } from './errors'
-import { reportDiagnostic, reportWatchStatusChanged } from './logger'
+import { reportDiagnostic, reportWatchStatusChanged, report } from './logger'
 import { createDocumentation } from './parser'
 
 const DEFAULT_CONFIG = './docconfig.json'
@@ -103,6 +103,7 @@ function watchMain(config: Config) {
             if (config.afterHook) execSync(config.afterHook)
             if (!argv.watch) process.exit(0)
         })
+        .catch(console.error);
     }
 
     // `createWatchProgram` creates an initial program, watches files, and updates

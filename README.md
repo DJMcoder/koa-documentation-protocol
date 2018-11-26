@@ -1,6 +1,11 @@
 # koa-documentation-protocol
 Parses comments on koa controllers to produce documentation.
 This requires Koa and TypeScript. File placement does not matter.
+
+```
+npm install harkerdev-documentation-protocol -g
+```
+
 ## Documentation Protocol
 The documentation protocol as so, per each controller.
 ```typescript
@@ -127,9 +132,7 @@ When creating an example response Body (in JSON), the compiler will use examples
 
 ### Running
 
-Until we get a published npm package, make the path of `koa-documentation-protocol` the working directory and then run `npm link`. Once we get a published npm package, all you will have to do is run `npm install [name-of-package] -g`.
-
-Then, change the working directory to the same one as the `docconfig.json`. Run the command `hdoc`. An API Blueprint will have been produced, and then you can run something to convert that into HTML (e.g., aglio).
+Once installed, change the working directory to the same one as the `docconfig.json`. Run the command `hdoc`. An API Blueprint will have been produced, and then you can run something to convert that into HTML (e.g., aglio).
 
 You can also use it with multiple options
 
@@ -139,4 +142,4 @@ Option | Description
 `-p, --project` | Path to a `docconfig.json` file describing documentation
 `-w, --watch` | Recompile when input files change
 
-For example, to run with the configuration `docconfig.json` in watch mode, you would run the command `hdoc -p docconfig.json -w` .
+For example, to run with the configuration `docconfig2.json` in watch mode, you would run the command `hdoc -p docconfig2.json -w` .
