@@ -1,4 +1,4 @@
-# koa-documentation-protocol
+# documentation-protocol
 Parses comments on koa controllers to produce documentation.
 This requires Koa and TypeScript. File placement does not matter.
 
